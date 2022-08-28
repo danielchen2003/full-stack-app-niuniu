@@ -2,11 +2,11 @@ import mongoose from "mongoose"
 
 const postSchema = mongoose.Schema(
   {
-    title:  { type: "string", required: true },
+    title:  { type: String, required: true },
     message: String,
-    person: String,
     tags: [String],
-    month:Number,
+    year:Number,
+    babyName: String,
     location: String,
     selectedFile: String,
     likeCount: {
